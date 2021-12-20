@@ -11,55 +11,55 @@ app.use(express.static("./public"));
 ////////////////////////////////////
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("index", {title: "Hadass Sternberg"});
 });
 
 app.get("/info", (req, res) => {
-  res.render("info");
+  res.render("info", {title: "Info - Hadass Sternberg"});
 });
 
 app.get("/projects/futura", (req, res) => {
-  res.render("project-futura");
+  res.render("project-futura"), {title: "Futura - Hadass Sternberg"};
 });
 
 app.get("/projects/greek-theater", (req, res) => {
-  res.render("project-greek-theater");
+  res.render("project-greek-theater", {title: "Greek Theater - Hadass Sternberg"});
 });
 
 app.get("/projects/infographics", (req, res) => {
-  res.render("project-infographics");
+  res.render("project-infographics", {title: "Infographics - Hadass Sternberg"});
 });
 
 app.get("/projects/judaikit", (req, res) => {
-  res.render("project-judaikit");
+  res.render("project-judaikit", {title: "Judaikit - Hadass Sternberg"});
 });
 
 app.get("/projects/jumper92", (req, res) => {
-  res.render("project-jumper92");
+  res.render("project-jumper92", {title: "Jumper 92 - Hadass Sternberg"});
 });
 
 app.get("/projects/luminaire", (req, res) => {
-  res.render("project-luminaire");
+  res.render("project-luminaire", {title: "Luminaire - Hadass Sternberg"});
 });
 
 app.get("/projects/metoo", (req, res) => {
-  res.render("project-metoo");
+  res.render("project-metoo", {title: "Metoo - Hadass Sternberg"});
 });
 
 app.get("/projects/myposterboom", (req, res) => {
-  res.render("project-myposterboom");
+  res.render("project-myposterboom" , {title: "Myposterboom - Hadass Sternberg"});
 });
 
 app.get("/projects/softcrab", (req, res) => {
-  res.render("project-softcrab");
+  res.render("project-softcrab", {title: "Softcrab - Hadass Sternberg"});
 });
 
 app.get("/projects/stephenwilks", (req, res) => {
-  res.render("project-stephenwilks");
+  res.render("project-stephenwilks", {title: "Stephen Wilks - Hadass Sternberg"});
 });
 
 app.get("/projects/xyz", (req, res) => {
-  res.render("project-xyz");
+  res.render("project-xyz", {title: "XYZ - Hadass Sternberg"});
 });
 
 app.get("*", (req, res) => {
